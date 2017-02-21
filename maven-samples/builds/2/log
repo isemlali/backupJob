@@ -1,0 +1,23 @@
+Démarré par l'utilisateur [8mha:////4J783oe7x9CUmGVFAIdeRd57YIz4sgs+vUZEiGn/u8nbAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\maven-samples
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/gabrielf/maven-samples.git # timeout=10
+Fetching upstream changes from https://github.com/gabrielf/maven-samples.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress https://github.com/gabrielf/maven-samples.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision a5a75698b2fe02345bb0aef158709def5b716ca3 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f a5a75698b2fe02345bb0aef158709def5b716ca3
+ > git.exe rev-list a5a75698b2fe02345bb0aef158709def5b716ca3 # timeout=10
+[maven-samples] $ cmd.exe /C "mvn -f maven-samples\pom.xml compile && exit %%ERRORLEVEL%%"
+
+ERROR: M2_HOME is set to an invalid directory.
+M2_HOME = "D:\sncf\tools\apache-maven-3.3.1"
+Please set the M2_HOME variable in your environment to match the
+location of the Maven installation
+
+Build step 'Invoquer les cibles Maven de haut niveau' marked build as failure
+Finished: FAILURE
